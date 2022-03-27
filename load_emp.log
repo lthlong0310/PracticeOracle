@@ -1,0 +1,50 @@
+
+SQL*Loader: Release 18.0.0.0.0 - Production on Sat Mar 26 15:03:51 2022
+Version 18.4.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   D:\LONG\DataEngineer\SQL_Advance\Oracle\load_emp.ctl
+Data File:      D:\LONG\DataEngineer\SQL_Advance\Oracle\emp_data.dat
+  Bad File:     D:\LONG\DataEngineer\SQL_Advance\Oracle\emp_data.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 1
+Errors allowed: 50
+Bind array:     250 rows, maximum of 1048576 bytes
+Continuation:    none specified
+Path used:      Conventional
+
+Table EMPS, loaded from every logical record.
+Insert option in effect for this table: TRUNCATE
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+EMP_ID                              FIRST     *   ,       CHARACTER            
+EMP_NAME                             NEXT     *   ,       CHARACTER            
+DEPT_NUM                             NEXT     *   ,       CHARACTER            
+
+
+Table EMPS:
+  4 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+
+Space allocated for bind array:                 193500 bytes(250 rows)
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          1
+Total logical records read:             4
+Total logical records rejected:         0
+Total logical records discarded:        0
+
+Run began on Sat Mar 26 15:03:51 2022
+Run ended on Sat Mar 26 15:03:51 2022
+
+Elapsed time was:     00:00:00.31
+CPU time was:         00:00:00.24
