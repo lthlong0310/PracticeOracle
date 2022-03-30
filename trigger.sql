@@ -87,4 +87,15 @@ alter table emp enable ALL triggers;
     Homework:
 
 */
+create or replace trigger check_date
+before insert on emp
+begin
+    if (to_char(sysdate, 'DY') in ('SAT', 'SUN'))
+        or to_char(sysdate, 'HH24') not between '08' and '18'
+        then raise_application_error(-20500, 'Thoi gian lam viec khong hieu qua');
+    end if;
+end;
+/
+
+
 
